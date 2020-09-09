@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomModalStatusView" customModule="CustomModalStatus" customModuleProvider="target">
+            <connections>
+                <outlet property="headlineLabel" destination="or3-TH-vLg" id="UFJ-ZB-McM"/>
+                <outlet property="statusImage" destination="JaM-Ql-9A6" id="ped-uU-Fnd"/>
+                <outlet property="subheadLabel" destination="6bR-yG-N2g" id="GnF-8C-L3S"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLG-WP-tIs">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qPx-zu-IrN">
+                <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JaM-Ql-9A6">
+                        <rect key="frame" x="50" y="10" width="130" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="130" id="LV0-yR-uGm"/>
+                            <constraint firstAttribute="width" constant="130" id="ZPL-TD-75d"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Headline Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="or3-TH-vLg">
+                        <rect key="frame" x="8" y="160" width="214" height="20.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Optional multi-line capable subhead label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bR-yG-N2g">
+                        <rect key="frame" x="8" y="185.5" width="214" height="38"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JaM-Ql-9A6" firstAttribute="top" secondItem="qPx-zu-IrN" secondAttribute="top" constant="10" id="8wf-qU-YqL"/>
+                    <constraint firstItem="JaM-Ql-9A6" firstAttribute="centerX" secondItem="qPx-zu-IrN" secondAttribute="centerX" id="CjU-YV-iij"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="or3-TH-vLg" secondAttribute="trailing" id="Q4x-Fo-5by"/>
+                    <constraint firstItem="or3-TH-vLg" firstAttribute="top" secondItem="JaM-Ql-9A6" secondAttribute="bottom" constant="20" id="UyC-Sl-Wan"/>
+                    <constraint firstItem="6bR-yG-N2g" firstAttribute="top" secondItem="or3-TH-vLg" secondAttribute="bottom" constant="5" id="V4f-Qb-jr8"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6bR-yG-N2g" secondAttribute="trailing" id="Wwq-iv-Qj8"/>
+                    <constraint firstItem="or3-TH-vLg" firstAttribute="leading" secondItem="qPx-zu-IrN" secondAttribute="leadingMargin" id="Zjy-iO-0h7"/>
+                    <constraint firstItem="6bR-yG-N2g" firstAttribute="leading" secondItem="qPx-zu-IrN" secondAttribute="leadingMargin" id="u61-g7-bRP"/>
+                </constraints>
+            </view>
+            <constraints>
+                <constraint firstAttribute="width" constant="230" id="3Mv-83-QOj"/>
+                <constraint firstAttribute="height" constant="230" id="hZc-sE-3kK"/>
+            </constraints>
+            <blurEffect style="light"/>
+            <point key="canvasLocation" x="79" y="-1"/>
+        </visualEffectView>
+    </objects>
+</document>
